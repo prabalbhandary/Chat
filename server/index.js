@@ -14,7 +14,7 @@ const { app, socket } = require("./socket/index");
 // middlewares
 app.use(express.json());
 app.use(cookieParser());
-app.use(cors({ origin: [process.env.CLIENT_URL], credentials: true }));
+app.use(cors({ origin: [process.env.CLIENT_URL, 'https://chat-uxbs-prabalbhandarys-projects.vercel.app'], credentials: true }));
 app.use(morgan("dev"));
 
 // variables
